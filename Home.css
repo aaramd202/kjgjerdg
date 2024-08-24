@@ -1,0 +1,233 @@
+
+
+body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 2em;
+    transition: background-color 0.5s ease 300ms; /* Smooth transition for background color */
+     z-index: 1000; /*Ensure header is above other content */
+}
+
+header.black-bg {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+}
+
+header .logo img {
+    height: 40px;
+    border-radius: 10%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+    display: flex;
+    padding-right: 6em;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.vdo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    background: transparent;
+    z-index: 0;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #33333393;
+    padding: 0em;
+    
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 0.5em;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero .btn:hover {
+    background-color: #f60;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.village-cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 868px) {
+    .village-cards  {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    }
+
+
+
+.more-menu {
+    display: none;
+}
+
+.more-nav {
+    display: none;
+}
+
+.menu-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle img {
+    width: 2rem;
+    padding-right: 7vh;
+}   
+
+.menu-bar {
+    display: none;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .cont-right {
+        display: none;
+    }
+
+    .more-menu {
+        display: block;
+    }
+
+    .more-nav {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+    }
+
+    .more-nav.show {
+        display:block; /* Show the menu when 'show' class is added */
+    }
+}
+
+/* styles.css (add this to the existing CSS) */
+
+.more-nav ul {
+    list-style: none;
+    right: 0;
+    margin:0 ;
+    padding: 10% 40% 50% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(9px);
+    position: absolute;
+}
+
+.close-toggle {
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 5vh;
+}
+
+.more-nav ul li {
+    width: 100%;
+    height: 5rem;
+}
+
+
+/*-------------*/
+
+.village-card {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+}
+
+.village-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+footer .footer-links ul li {
+    margin: 0 10px;
+}
+
+footer .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
