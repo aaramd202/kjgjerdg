@@ -1,0 +1,111 @@
+/* Basic styling for the Villages page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.villages-intro {
+    margin-bottom: 2em;
+}
+
+.village-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.village-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: left;
+}
+
+.village-card img {
+    width: 100%;
+    height: auto;
+}
+
+.village-card h3 {
+    margin-top: 0.5em;
+}
+
+.village-card p {
+    font-size: 0.9em;
+}
+
+.village-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f90;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+footer .footer-links ul li {
+    margin: 0 10px;
+}
+
+footer .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
